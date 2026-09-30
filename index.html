@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Паника-режим</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Паника-режим</h1>
+        <p>Помощь в сложной или стрессовой ситуации</p>
+    </header>
+
+    <main>
+        <section class="card" id="formSection">
+
+            <h2>Что произошло?</h2>
+
+            <label for="situation">Выберите ситуацию:</label>
+
+            <select id="situation">
+                <option value="">-- Выберите ситуацию --</option>
+                <option value="study">Учёба</option>
+                <option value="stress">Стресс</option>
+                <option value="conflict">Конфликт</option>
+                <option value="other">Другая ситуация</option>
+            </select>
+
+            <label for="problem">Опишите проблему:</label>
+
+            <textarea
+                id="problem"
+                placeholder="Напишите, что произошло..."
+            ></textarea>
+
+            <p id="error" class="error"></p>
+
+            <button id="planButton">Получить план</button>
+
+        </section>
+
+        <section class="card result" id="resultSection">
+
+            <h2>Ваш план действий</h2>
+
+            <p id="resultText"></p>
+
+            <ol id="planList"></ol>
+
+            <button id="restartButton">Начать заново</button>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Паника-режим © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
